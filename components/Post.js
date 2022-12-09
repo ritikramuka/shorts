@@ -34,7 +34,7 @@ function Post({ postData, userData }) {
 
     return (
         <div className="post-container">
-            <video src={postData.postUrl} />
+            <video src={postData.postUrl} autoPlay={true} muted loop={true}/>
             <div className="videos-info">
                 <div className="avatar_container">
                     <Avatar alt="Remy Sharp" src={postData.profileUrl} sx={{ margin: "0.5rem" }} />
